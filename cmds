@@ -1,0 +1,36 @@
+--proto_path
+
+protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:./go-client/services
+
+
+protoc -I . --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:./go-client/services
+
+protoc -I . post_service.proto --go_out=plugins=grpc:.
+
+protoc --go_out=plugins=grpc:. *.proto
+
+
+protoc -I . --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:.
+
+
+-go-grpc_ou
+
+protoc -I . /Volumes/mac-extention/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:./go-client/services
+
+protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/ --go_out=plugins=grpc:./go-client/services post_service.proto
+
+--go-grpc_out=
+
+
+protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/ --go-grpc_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services post_service.proto
+
+protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/        \
+  --go_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services      \
+  --go-grpc_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
+
+  protos/*.proto 
+
+protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/ \
+--go_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
+--go-grpc_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
+post_service.proto

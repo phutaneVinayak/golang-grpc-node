@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "./go-grpc-node";
+
+message Post {
+    int32 id = 1;
+    string title = 2;
+    string text = 3;
+}
+
+message Empty {}
+
+message postList {
+    repeated Post posts = 1;
+}
+
+service PostService {
+    rpc GetPosts (Empty) returns (postList) {};
+
+    rpc postPosts (Post) returns (Post) {};
+}
