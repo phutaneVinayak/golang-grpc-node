@@ -30,7 +30,7 @@ protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/        \
 
   protos/*.proto 
 
-protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/ \
+protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node \
 --go_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
 --go-grpc_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
 post_service.proto
