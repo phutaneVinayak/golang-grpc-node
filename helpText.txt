@@ -1,0 +1,6 @@
+b := []byte(`{"groups":[{"name":"foo"},{"name":"bar"}]}`)
+type Group struct{ name string }
+var contents struct {
+    groups []Group
+}
+err := json.Unmarshal(b, &contents)

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "github.com/vinayakPhutane/go-grpc-node/cli_post_service";
+
+import "google/protobuf/any.proto";
+
+message CliPostRequestBody {
+    string FunctionName = 1;
+    string InvocationType = 2;
+    string LogType = 3;
+    string RequestTimeout = 4;
+    google.protobuf.Any Payload = 5;
+}
+
+message CliPostResponseBody {
+    google.protobuf.Any data = 1;
+    google.protobuf.Any meta = 2;
+}
+
+service CliService {
+    rpc invokeCliConnector (CliPostRequestBody) returns (CliPostResponseBody);
+}

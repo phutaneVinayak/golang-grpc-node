@@ -1,6 +1,6 @@
 --proto_path
 
-protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:./go-client/services
+protoc --proto_path=/mnt/c/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:./go-client/services
 
 
 protoc -I . --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node/post_service.proto --go_out=plugins=grpc:./go-client/services
@@ -34,3 +34,5 @@ protoc --proto_path=/Volumes/mac-extention/workDir/github/go-grpc-node \
 --go_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
 --go-grpc_out=/Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services \
 post_service.proto
+
+protoc --proto_path=/mnt/c/workDir/github/golang-grpc-node/go-client/protofiles --go_out=/mnt/c/workDir/github/golang-grpc-node/go-client/cli_services --go-grpc_out=/mnt/c/workDir/github/golang-grpc-node/go-client/cli_services cli_post_service.proto

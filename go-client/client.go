@@ -1,4 +1,4 @@
-package main
+package data
 
 // /Volumes/mac-extention/workDir/github/go-grpc-node/go-client/services/go-grpc-node/post_service.pb.go
 import (

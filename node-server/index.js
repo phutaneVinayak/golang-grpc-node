@@ -20,7 +20,7 @@ const postPosts = (call, cb) => {
         let userData =  call.request;
         userData["id"] = userData.id + 1;
         cb(null, userData)
-    }, 180000);
+    }, 10);
 }
 
 const server = new grpc.Server();
